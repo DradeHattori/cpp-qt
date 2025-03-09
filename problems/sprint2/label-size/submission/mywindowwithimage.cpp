@@ -35,7 +35,18 @@ void MyWindowWithImage::SetPixmap(QLabel *label_pix, const QString path)
     Q_ASSERT(!pix.isNull());
 
     label_pix->setPixmap( pix );
+    FitToImage(label_pix);
     label_pix->show();
+}
+
+void MyWindowWithImage::FitToImage(QLabel *label)
+{
+    int img_width = label->pixmap().width();
+    int img_height = label->pixmap().height();
+    label->setFixedSize(img_width, img_height);
+    label->move(0,0);
+
+    setFixedSize(label->size());
 }
 
 // Запишите здесь реализацию нового метода.

@@ -17,14 +17,20 @@
    <widget class="QLabel" name="lbl_size">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>20</y>
-      <width>58</width>
-      <height>16</height>
+      <x>0</x>
+      <y>0</y>
+      <width>461</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
     </property>
    </widget>
   </widget>
@@ -34,7 +40,7 @@
      <x>0</x>
      <y>0</y>
      <width>467</width>
-     <height>24</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
